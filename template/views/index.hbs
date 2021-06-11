@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="icon" href="/image/weather.png">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+
+        <form action="">
+            <input placeholder="Enter address">
+            <button>Search</button>
+        </form>
+
+        <p id="hari1"></p>
+        <p id="hari2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
