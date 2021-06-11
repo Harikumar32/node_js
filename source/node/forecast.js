@@ -37,7 +37,7 @@ const forecast = (long, lat, callback) => {
         } else if (body.error) {
             callback(chalk.red.inverse("Unable to find weather location"));
         } else {
-            callback(undefined, "It is currently " + body.current.temperature + " degrees out. There is a " + body.current.feelslike + "% chance of rain")
+            callback(undefined, "It is currently " + body.current.temperature + " degrees out. There is a " + body.current.feelslike + "% chance of rain and humidity is more high " + body.current.humidity + " so the current visibility " + body.current.visibility + " is too low")
         }
     })
 }
