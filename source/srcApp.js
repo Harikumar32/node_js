@@ -6,6 +6,7 @@ const geoCode = require('./node/geocode');
 const forecast = require('./node/forecast');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const rootDirectoryPath = path.join(__dirname, '../public');
@@ -96,6 +97,6 @@ app.get('*', (req, res) => {
         errorMessage: "Page Not Message"
     });
 })
-app.listen(3000, () => {
-    console.log("Server is up and running in 3000..")
+app.listen(port, () => {
+    console.log("Server is up and running in " + port);
 })
